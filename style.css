@@ -1,0 +1,40 @@
+.c1 {
+    background-color: #1F2937;
+}
+.c1 h1, h2 {
+    color: #F9FAF8;
+}
+.c1 h1 {
+    font-weight: 800;
+    font-size: 48px;
+}
+.c1 h2 {
+    font-size: 24px;
+}
+.c1 .sub-text, .image-placeholder {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.sign-up {
+    background: #3882F6;
+    color:#F9FAF8;
+    border: 1px solid #3882F6;
+    font-size: 18px;
+    font-weight: 800;
+}
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+}
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}

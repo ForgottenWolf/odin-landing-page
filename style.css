@@ -24,7 +24,6 @@ h1,h2,h3,h4,h5,h6 {
     padding: 24px;
     color: #F9FAF8;
 }
-/* Button Stlying */
 .sign-up {
     background: #3882F6;
     color:#F9FAF8;
@@ -36,7 +35,6 @@ button {
     padding: 8px 16px;
     border-radius: 8px;
 }
-/* End Button Stlying */
 .header a {
     text-decoration: none;
     font-size: 18px;
@@ -49,29 +47,34 @@ ul {
     display: flex;
     gap: 12px;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* Begin Flex arrangment of c1 */
 .c1 {
     display:flex;
     flex-direction: column;
-    padding: 0 350px;
+    padding: 0 20%;
 }
 .header {
     display:flex;
     align-items:center;
     justify-content: space-between;
     padding-top:20px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 }
 .c1 .content {
     display:flex;
     gap: 32px;
+    padding-bottom: 75px;
 }
 .content2 {
     display:flex;
     flex-direction: column;
     flex:1;
+    align-items: flex-start;
 }
 .image-placeholder {
-    justify-content: center;
-    align-self: center;
     flex:1;
 }

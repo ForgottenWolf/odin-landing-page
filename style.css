@@ -1,3 +1,7 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
 .body {
     display: flex;
     flex-direction: column;
@@ -45,7 +49,7 @@ ul {
     padding: 24px;
     color: #F9FAF8;
 }
-.sign-up {
+.c1 .sign-up {
     background: #3882F6;
     color:#F9FAF8;
     border: 1px solid #3882F6;
@@ -56,31 +60,152 @@ ul {
 .c1 {
     display:flex;
     flex-direction: column;
-    /* padding: 0 20%; */
     justify-content: center;
     align-items: center;
 }
-.header {
+.c1 .header {
     display:flex;
     align-items:center;
     justify-content: space-between;
     padding-top:20px;
     padding-bottom: 75px;
+    gap: 635px;
 }
 .c1 .content {
     display:flex;
     gap: 32px;
     padding-bottom: 75px;
 }
-.content2 {
+.c1 .content2 {
     display:flex;
     flex-direction: column;
     flex:1;
     align-items: flex-start;
+    gap: 8px;
 }
-.image-placeholder {
+.c1 .image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex:1;
 }
 /* Styling of c2 */
-
+.c2 h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1F2937
+}
+.cards {
+    outline: 2px solid #3882F6;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+}
+.c2 .sub-text {
+    text-align: center;
+    font-size: 18px;
+}
 /* Flex arrangment of c2 */
+.c2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+.c2 .header {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding: 24px;
+}
+.c2 .content {
+    display: flex;
+    gap: 48px;
+}
+.c2 .col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width:100px;
+}
+/* Styling of c3 */
+.c3 {
+    background: #E5E7EB;
+}
+.c3 .content {
+    font-size: 36px;
+    color:#1F2937;
+}
+.c3 .signature {
+    font-size: 24px;
+    font-weight: 700;
+}
+/* Flex arrangment of c3 */
+.c3  {
+    display:flex;
+}
+.c3 .content {
+    display:flex;
+    flex-direction: column;
+    padding: 5% 15%;
+}
+.c3 .content .signature {
+    align-self: flex-end;
+}
+/* Styling of c4 */
+.c4 .content {
+    background: #3882F6;
+    margin: 5% 10%;
+    padding: 50px;
+    border-radius: 8px;
+}
+.c4 .content.header {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 700px;
+}
+.c4 .sub-text {
+    font-size: 18px;
+    color:  #E5E7EB;
+}
+.c4 .sign-up {
+    background: #3882F6;
+    color:#F9FAF8;
+    border: 2px solid #F9FAF8;
+    font-size: 18px;
+    font-weight: 800;
+}
+/* Flex arrangment of c4 */
+.c4 {
+    display: flex;
+}
+.c4 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 700;
+    flex: 1;
+    gap: 40px;
+}
+.c4 .col {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+.c4 .sign-up { 
+    width: 150px;
+}
+/* Styling of c5 */
+.footer {
+    background: #1F2937;
+    color: #F9FAF8;
+    padding: 2% 1%;
+}
+/* Flex arrangment of c5 */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,214 +1,168 @@
 html, body {
     margin: 0;
     padding: 0;
-  }  
-.body {
-    display: flex;
+}
+body {
+    display:flex;
     flex-direction: column;
-}
-h1,h2,h3,h4,h5,h6 {
-    margin:0;
-    padding:0;
- }
-button {
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-.header a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
+    height: 100vh;
 }
 ul {
+    display:flex;
+    padding:0px;
+    margin:0px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 12px;
+    gap:28px;
 }
-/* Styling of C1 */
-.c1 {
-    background: #1F2937;
+.blockone, .blocktwo, .blockthree, .blockfour {
+    flex-grow: 1;
 }
-.c1 h1, h2 {
-    color: #F9FAF8;
+.blockone{
+    background-color:#1F2937;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
-.c1 h1 {
-    font-weight: 800;
-    font-size: 48px;
+.blocktwo {
+    background-color:#F9FAF8;
 }
-.c1 h2 {
+.blockthree {
+    background-color: #E5E7EB;
+}
+.blockfour {
+    background-color: #F9FAF8;
+}
+.blockfive {
+    background-color:#1F2937;
+}
+.header {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:48px;
+    margin-top:8px;
     font-size: 24px;
+    color:#F9FAF8;
 }
-.c1 .sub-text, .image-placeholder {
+.content {
+    display:flex;
+    gap:48px;
+    justify-content: space-between;
+    height:100%;
+    margin-bottom: 250px;
+}
+.center {
+    width:60%;
+    height:60%;
+}
+.imagebox {
+    background-color:grey;
+    width:50%;
+    height: 100%;
+}
+.left {
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    width:50%;
+}
+ul, .left {
     font-size: 18px;
     color: #E5E7EB;
 }
-.image-placeholder {
-    background: grey;
-    padding: 24px;
-    color: #F9FAF8;
+.hero {
+    font-weight: 900;
+    font-size: 48px;
+    color:#f9FAF8;
 }
-.c1 .sign-up {
-    background: #3882F6;
-    color:#F9FAF8;
-    border: 1px solid #3882F6;
-    font-size: 18px;
-    font-weight: 800;
-}
-/* Flex arrangment of c1 */
-.c1 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.c1 .header {
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    padding-top:20px;
-    padding-bottom: 75px;
-    gap: 635px;
-}
-.c1 .content {
-    display:flex;
-    gap: 32px;
-    padding-bottom: 75px;
-}
-.c1 .content2 {
-    display:flex;
-    flex-direction: column;
-    flex:1;
-    align-items: flex-start;
-    gap: 8px;
-}
-.c1 .image-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex:1;
-}
-/* Styling of c2 */
-.c2 h1 {
-    font-size: 32px;
-    font-weight: 800;
-    color: #1F2937
-}
-.cards {
-    outline: 2px solid #3882F6;
-    height: 150px;
-    width: 150px;
-    border-radius: 8px;
-}
-.c2 .sub-text {
-    text-align: center;
-    font-size: 18px;
-    width: 150px;
-}
-/* Flex arrangment of c2 */
-.c2 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
-    margin-bottom: 4%;
-}
-.c2 .header {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    padding: 24px;
-}
-.c2 .content {
-    display: flex;
-    flex: 1;
-    gap: 100px;
-}
-.c2 .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+button {
     width:100px;
+    background-color:#3882F6;
+    font-size: 18px;
+    color:#f9FAF8;
+    border: none;
+    border-radius: 8px;
+    padding:4px;
 }
-/* Styling of c3 */
-.c3 {
-    background: #E5E7EB;
+.blocktwo {
+    text-align: center;
 }
-.c3 .content {
+.two-header {
     font-size: 36px;
+    font-weight: 900;
     color:#1F2937;
+    padding: 16px;
 }
-.c3 .signature {
-    font-size: 24px;
+.frame {
+    border: 4px solid #3882F6;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    gap:48px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.card-container {
+    max-width: 200px;
+}
+.card-container .text {
+    color:#1F2937;
+    font-size: 18px;
+}
+.blockthree .text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    padding:50px;
+    padding-bottom:0px;
+}
+.blockthree {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerthree {
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+.quote {
+    align-self: flex-end;
+    padding-bottom: 50px;
     font-weight: 700;
 }
-/* Flex arrangment of c3 */
-.c3  {
+.containerfour {
+    width:60%;
+    background-color:#3882F6;
     display:flex;
-}
-.c3 .content {
-    display:flex;
-    flex-direction: column;
-    padding: 5% 15%;
-}
-.c3 .content .signature {
-    align-self: flex-end;
-}
-/* Styling of c4 */
-.c4 .content {
-    background: #3882F6;
-    margin: 5% 10%;
-    padding: 50px;
+    justify-content: space-between;
+    padding:32px;
+    margin:3%;
     border-radius: 8px;
 }
-.c4 .content.header {
+.containerfour button {
+    border: 2px solid white;
+}
+.blockfour {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourleft .text {
+    color:#E5E7EB;
+    font-size: 18px;
+}
+.four-header{
     font-size: 24px;
-    color: #F9FAF8;
-    font-weight: 700px;
+    color:#f9FAF8;
+    font-weight: 700;
 }
-.c4 .sub-text {
+.blockfive {
+    text-align: center;
+    padding:26px;
+    color:#E5E7EB;
     font-size: 18px;
-    color:  #E5E7EB;
-}
-.c4 .sign-up {
-    background: #3882F6;
-    color:#F9FAF8;
-    border: 2px solid #F9FAF8;
-    font-size: 18px;
-    font-weight: 800;
-}
-/* Flex arrangment of c4 */
-.c4 {
-    display: flex;
-}
-.c4 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 700;
-    flex: 1;
-    gap: 40px;
-}
-.c4 .col {
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-}
-.c4 .sign-up { 
-    width: 150px;
-}
-/* Styling of c5 */
-.footer {
-    background: #1F2937;
-    color: #F9FAF8;
-    padding: 2% 1%;
-}
-/* Flex arrangment of c5 */
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
